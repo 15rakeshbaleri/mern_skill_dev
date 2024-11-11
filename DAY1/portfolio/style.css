@@ -2,11 +2,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
+  background-color: rgb(48, 52, 47);
+}
+h2 {
+  color: #ffffff;
 }
 p {
   font-size: larger;
   font-weight: 600;
+  color: #ffffff;
+  margin-top: 20px;
 }
 a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -15,7 +20,8 @@ a {
   margin: 10px;
 }
 nav {
-  background-color: aquamarine;
+  border-radius: 20px;
+  background-color: rgb(63, 72, 69);
   width: 100%;
   padding: 20px;
 }
@@ -38,4 +44,8 @@ nav {
 img {
   border-radius: 50%;
   height: 100px;
+}
+.cardstyle {
+  background-color: rgb(79, 78, 78);
+  color: #ffffff;
 }
