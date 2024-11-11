@@ -8,9 +8,16 @@ p {
   font-size: larger;
   font-weight: 600;
 }
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  margin: 10px;
+}
 nav {
   background-color: aquamarine;
   width: 100%;
+  padding: 20px;
 }
 .container {
   display: flex;
@@ -30,6 +37,5 @@ nav {
 }
 img {
   border-radius: 50%;
-  width: 100px;
-  height: auto;
+  height: 100px;
 }
