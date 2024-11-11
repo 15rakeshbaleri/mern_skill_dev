@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+p {
+  font-size: larger;
+  font-weight: 600;
+}
+nav {
+  background-color: aquamarine;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  margin: 20px;
+}
+.image {
+  display: flex;
+  align-items: center;
+}
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
