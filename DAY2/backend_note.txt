@@ -1,0 +1,11 @@
+run in terminal 
+
+1. npm init -y
+
+creates package.json
+
+2. npm i mongodb 
+
+node module
+
+3. npm i mongoose
