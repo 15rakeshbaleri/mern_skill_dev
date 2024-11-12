@@ -13,5 +13,6 @@ const cart = [
   { name: "charger", price: 1000 },
 ];
 //function with two args accum and item
+
 const value = cart.reduce((accumulator, item) => accumulator + item.price, 0);
 console.log(value);

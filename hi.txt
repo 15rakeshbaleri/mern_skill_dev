@@ -1,0 +1,22 @@
+use state 
+	
+const [count , setcount] = usestate(0);
+
+
+----------------------------------------
+useeffect
+
+renders every time when there is changes in webpage
+
+useeffect(()=>{
+console.log("render");
+div{count}
+}
+
+now check wether changes is done in count then only re render
+
+useeffect(()=>{
+console.log("render");
+div{count},[count]
+
+}
