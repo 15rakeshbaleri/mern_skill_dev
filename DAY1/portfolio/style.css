@@ -23,6 +23,9 @@ nav {
   background-color: rgb(63, 72, 69);
   width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .container {
   display: flex;
@@ -40,10 +43,10 @@ nav {
   display: flex;
   align-items: center;
 }
-img {
+/* img {
   border-radius: 50%;
   height: 100px;
-}
+} */
 .cardstyle {
   background-color: rgb(79, 78, 78);
   color: #ffffff;
