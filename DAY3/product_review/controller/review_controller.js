@@ -21,7 +21,7 @@ exports.createItem = async (req, res) => {
 
 exports.getbyid = async (req, res) => {
   try {
-    const item = await Product.findOne({ _id: req.params.id });
+    const item = await Review.findOne({ _id: req.params.id });
     res.status(200).json(item);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -30,7 +30,7 @@ exports.getbyid = async (req, res) => {
 
 exports.updateItem = async (req, res) => {
   try {
-    const updatedItem = await Product.findByIdAndUpdate(
+    const updatedItem = await Review.findByIdAndUpdate(
       req.params.id,
       req.body,
       {
@@ -47,7 +47,7 @@ exports.updateItem = async (req, res) => {
 
 exports.deleteItem = async (req, res) => {
   try {
-    const deletedItem = await Product.findByIdAndDelete(req.params.id);
+    const deletedItem = await Review.findByIdAndDelete(req.params.id);
     if (!deletedItem)
       return res.status(404).json({ message: "Item not found" });
     res.status(200).json({ message: "Item deleted successfully" });
