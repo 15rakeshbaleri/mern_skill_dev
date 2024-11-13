@@ -8,12 +8,12 @@ const userSchema = new mongoose.Schema({
   age: Number,
 });
 
-// Create a User model based on the schema
+//  User model based on the schema
 const User = mongoose.model("User", userSchema);
 
 async function main() {
   try {
-    // Connect to MongoDB
+    // conn to MongoDB
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -36,7 +36,7 @@ async function main() {
   } catch (error) {
     console.error("Error occurred:", error);
   } finally {
-    // Disconnect from MongoDB
+    // disconnect from MongoDB
     await mongoose.disconnect();
   }
 }
