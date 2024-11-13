@@ -26,7 +26,7 @@ mongoose
   })
   .then(() => console.log("Connected to MongoDB"))
   .catch((error) => console.error("MongoDB connection error:", error));
-app.use("/api/product", itemRoutes);
+app.use("/api/review", itemRoutes);
 app.use(cors(corsoptions)); //
 const PORT = process.env.PORT || 4001;
 
