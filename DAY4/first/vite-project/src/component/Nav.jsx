@@ -8,7 +8,7 @@ function Nav() {
           <div class="container-fluid">
             <a>
               <img
-                width={40}
+                width={30}
                 src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
                 class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                 alt=""
