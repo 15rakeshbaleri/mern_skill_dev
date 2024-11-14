@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Style from "./Get_trainer.module.css";
 function Get_trainer({ trainers, onDeleteTrainer }) {
   return (
-    <div>
+    <div className={Style.container}>
       <ul style={{ textAlign: "justify", listStyleType: "none", padding: 0 }}>
         {trainers.map((trainer) => (
           <li key={trainer._id} style={{ marginBottom: "1rem" }}>
