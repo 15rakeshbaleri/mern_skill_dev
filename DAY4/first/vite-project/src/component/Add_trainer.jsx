@@ -17,12 +17,12 @@ function Add_trainer({ onAddTrainer }) {
       trainer_name,
       trainer_location,
       trainer_skills,
-      trainer_phone: trainer_phno,
+      trainer_phno,
     };
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/trainers/",
+        "http://localhost:3000/api/trainer/",
         newTrainer
       );
 

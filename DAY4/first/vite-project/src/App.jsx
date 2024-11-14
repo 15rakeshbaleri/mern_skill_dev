@@ -28,7 +28,7 @@ function App() {
 
   const handleDeleteTrainer = async (trainerId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/trainers/${trainerId}`);
+      await axios.delete(`http://localhost:3000/api/trainer/${trainerId}`);
       setTrainer(trainer.filter((t) => t._id !== trainerId));
     } catch (error) {
       console.error("Error deleting trainer:", error);
