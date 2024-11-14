@@ -10,7 +10,7 @@ function Get_trainer({ trainers, onDeleteTrainer }) {
             <strong>Name:</strong> {trainer.trainer_name} <br />
             <strong>Location:</strong> {trainer.trainer_location} <br />
             <strong>Skills:</strong> {trainer.trainer_skills} <br />
-            <strong>Phone:</strong> {trainer.trainer_phone} <br />
+            <strong>Phone:</strong> {trainer.trainer_phno} <br />
             <Link to={`/edit-trainer/${trainer._id}`}>
               <button className="btn btn-secondary btn-sm">Edit</button>
             </Link>
