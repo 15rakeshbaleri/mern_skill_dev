@@ -42,6 +42,7 @@ function Add_trainer({ onAddTrainer }) {
 
   return (
     <div className={Style.container}>
+      <p>copyright @15rakeshbaleri</p>
       <h4 className="mb-3">Trainer Details</h4>
       <form onSubmit={handleSubmit} className="needs-validation" noValidate>
         <div className="col-sm-6">

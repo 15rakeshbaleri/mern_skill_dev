@@ -48,6 +48,7 @@ function App() {
         <h1>Trainer Management</h1>
 
         <nav class="navbar bg-primary">
+          <p>copyright @15rakeshbaleri</p>
           <form class="container-fluid justify-content-start">
             <button class="btn btn-danger " type="button">
               <Link to="/trainer">TrainerList</Link>
