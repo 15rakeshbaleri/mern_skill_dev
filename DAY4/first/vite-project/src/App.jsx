@@ -6,7 +6,7 @@ import Get_trainer from "./component/Get_trainer";
 import axios from "axios";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-function App() {
+function App({ newTrainer }) {
   const [trainer, settrainer] = useState;
 
   useEffect(() => {
@@ -18,8 +18,12 @@ function App() {
         console.error(`error in fetching`, error);
       }
     };
-  });
+    fetch_trianers();
+  }, []);
 
+  const handle_Addtrainer = (newTrainer) => {
+    settrainer([...trainer, newTrainer]);
+  };
   return (
     <>
       <Add_trainer />
